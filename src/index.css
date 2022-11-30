@@ -1,17 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,300&display=swap');
+
 body {
   margin: 0;
-  font-family:
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    'Roboto',
-    'Oxygen',
-    'Ubuntu',
-    'Cantarell',
-    'Fira Sans',
-    'Droid Sans',
-    'Helvetica Neue',
-    sans-serif;
+  font-family: 'Poppins', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -24,4 +15,41 @@ code {
     Consolas,
     'Courier New',
     monospace;
+}
+
+.parent {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 80px;
+  width: 500px;
+  margin-left: 20%;
+  margin-top: 5%;
+  border: none;
+}
+
+.child {
+  border: 1px solid rgb(202, 202, 202);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+}
+
+.output {
+  grid-column: 1/5;
+  padding-right: 1%;
+  display: grid;
+  align-items: center;
+  justify-content: end;
+  border: none;
+  font-size: 25px;
+  font-weight: 700;
+  color: #fff;
+  background-color: rgba(128, 128, 128, 0.781);
+}
+
+.zero {
+  grid-column: 1/3;
+}
+
+.orange {
+  background-color: rgb(255, 151, 65);
 }
