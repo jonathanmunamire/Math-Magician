@@ -2,15 +2,6 @@ import React, { useState } from 'react';
 import calculate from '../logic/calculate';
 
 const Calculator = () => {
-  // constructor(props) {
-  //   super(props);
-  //   this.state = {
-  //     total: null,
-  //     next: null,
-  //     operation: null,
-  //   };
-  // }
-
   const [state, setState] = useState({
     total: null,
     next: null,
