@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,300&display=swap');
+
 .calculator_page {
   display: flex;
   justify-content: space-evenly;
@@ -5,41 +7,79 @@
   color: #fff;
   min-height: 85vh;
   padding: 2% 10% 2% 10%;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: rgb(202, 15, 77);
+  color: #fff;
+  min-height: 85vh;
+  padding: 2% 0% 2% 0%;
+}
+
+.calculator {
+  background-color: #fff;
+  color: black;
+  position: relative;
+  width: 440px;
+  height: 100%;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 15px 15px 20px rgba(0,0,0,0.3);
 }
 
 .parent {
+  position: relative;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-auto-rows: 80px;
-  width: 500px;
-  margin-left: 20%;
-  margin-top: 5%;
-  border: none;
-}
-
-.child {
-  border: 1px solid rgb(202, 202, 202);
-  font-family: 'Poppins', sans-serif;
-  font-weight: 700;
 }
 
 .output {
-  grid-column: 1/5;
-  padding-right: 1%;
-  display: grid;
+  position: relative;
+  grid-column: span 4;
+  user-select: none;
+  overflow: none;
+  height: 50px;
+  text-align: end;
+  line-height: 50px;
+  box-shadow: inset 4px 4px 10px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  margin-bottom: 10px;
+  padding: 5%;
+  font-size: 2rem;
+}
+
+button {
+  position: relative;
+  padding: 10px;
+  margin: 10px;
+  cursor: pointer;
+  min-width: 40px;
+  min-height: 60px;
+  display: flex;
+  justify-content: center;
   align-items: center;
-  justify-content: end;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.1rem;
+  background-color: #fff;
+  border-radius: .5rem;
+  color: black;
   border: none;
-  font-size: 25px;
-  font-weight: 700;
+}
+
+button:active {
+  box-shadow: inset 2px 2px 6px rgba(0,0,0,0.1);
+}
+
+.plus {
+  grid-row: span 2;
+  background-color: rgb(4, 156, 4);
   color: #fff;
-  background-color: rgba(128, 128, 128, 0.781);
 }
 
-.zero {
-  grid-column: 1/3;
+.equal {
+  background-color: rgb(98, 98, 233);
+  color: #fff;
 }
 
-.orange {
-  background-color: rgb(255, 151, 65);
+.ac {
+  background-color: rgb(202, 15, 77);
+  color: #fff;
 }
