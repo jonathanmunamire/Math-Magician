@@ -1,0 +1,14 @@
+.navbar {
+    display: flex;
+    justify-content: space-around;
+}
+
+.links_list {
+    display: flex;
+    gap: 3rem;
+    align-items: center ;
+}
+
+.links_list a {
+    text-decoration: none;
+}
