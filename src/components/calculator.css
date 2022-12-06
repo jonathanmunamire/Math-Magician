@@ -5,7 +5,7 @@
   justify-content: space-evenly;
   background-color: rgb(202, 15, 77);
   color: #fff;
-  min-height: 85vh;
+  min-height: 75vh;
   padding: 2% 0% 2% 0%;
 }
 
@@ -29,6 +29,7 @@
   position: relative;
   grid-column: span 4;
   user-select: none;
+  width: 400px;
   height: 50px;
   text-align: end;
   line-height: 50px;

@@ -5,6 +5,7 @@ import Calculator from './components/calculator';
 import Navbar from './components/navbar';
 import Home from './components/home';
 import Quote from './components/quote';
+import Footer from './components/footer';
 
 class App extends React.Component {
   constructor(props) {
@@ -22,6 +23,7 @@ class App extends React.Component {
           <Route path="/quote" element={<Quote />} />
 
         </Routes>
+        <Footer />
       </div>
     );
   }
