@@ -1,5 +1,7 @@
+import './home.css';
+
 const Home = () => (
-  <div>
+  <div className="home_page">
     <h2>Welcome to Our page!</h2>
     <p>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
