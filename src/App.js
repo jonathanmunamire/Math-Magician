@@ -1,5 +1,6 @@
 import './index.css';
 import React from 'react';
+import { Routes, Route } from 'react-router-dom';
 import Calculator from './components/calculator';
 import Navbar from './components/navbar';
 import Home from './components/home';
@@ -15,9 +16,12 @@ class App extends React.Component {
     return (
       <div className="App">
         <Navbar />
-        <Home />
-        <Calculator />
-        <Quote />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/calculator" element={<Calculator />} />
+          <Route path="/quote" element={<Quote />} />
+
+        </Routes>
       </div>
     );
   }
