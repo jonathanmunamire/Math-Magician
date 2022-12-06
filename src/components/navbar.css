@@ -1,0 +1,23 @@
+.navbar {
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav_title {
+  color: rgb(202, 15, 77);
+}
+
+.links_list {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+}
+
+.links_list a {
+  text-decoration: none;
+  color: black;
+}
+
+.links_list a:hover {
+  color: rgb(202, 15, 77);
+}
