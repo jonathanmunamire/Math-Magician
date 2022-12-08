@@ -21,7 +21,6 @@ class App extends React.Component {
           <Route exact path="/" element={<Home />} />
           <Route path="/calculator" element={<Calculator />} />
           <Route path="/quote" element={<Quote />} />
-
         </Routes>
         <Footer />
       </div>
