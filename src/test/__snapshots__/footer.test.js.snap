@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test if the page Footer renders components test if the page Footer is rendered 1`] = `
+<footer
+  className="footer"
+>
+  <p
+    className="footer_text"
+  >
+    Copyright © 2022 | Designed by 
+    <span>
+      Jonathan MUNAMIRE
+    </span>
+  </p>
+</footer>
+`;
